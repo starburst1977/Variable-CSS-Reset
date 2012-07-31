@@ -1,0 +1,84 @@
+/* Variable Reset LESS */
+
+// Aimed at reseting a specific part of a site. Set the @scope variable inside your projects LESS file and use @import afterwards to include this file.
+/* Authors: Sven Read, Jan Wagner, Birgit Zimmermann */
+
+/* @group RESET CSS */
+
+(~"html .@{scope} div, html .@{scope} span, html .@{scope} applet, html .@{scope} object, html .@{scope} iframe, html .@{scope} h1, html .@{scope} h2, html .@{scope} h3, html .@{scope} h4, html .@{scope} h5, html .@{scope} h6, html .@{scope} p, html .@{scope} blockquote, html .@{scope} pre, html .@{scope} a, html .@{scope} abbr, html .@{scope} acronym, html .@{scope} address, html .@{scope} big, html .@{scope} cite, html .@{scope} code, html .@{scope} del, html .@{scope} dfn, html .@{scope} em, html .@{scope} img, html .@{scope} ins, html .@{scope} kbd, html .@{scope} q, html .@{scope} s, html .@{scope} samp, html .@{scope} small, html .@{scope} strike, html .@{scope} strong, html .@{scope} sub, html .@{scope} sup, html .@{scope} tt, html .@{scope} var, html .@{scope} b, html .@{scope} u, html .@{scope} i, html .@{scope} center, html .@{scope} dl, html .@{scope} dt, html .@{scope} dd, html .@{scope} ol, html .@{scope} ul, html .@{scope} li, html .@{scope} fieldset, html .@{scope} form, html .@{scope} label, html .@{scope} legend, html .@{scope} table, html .@{scope} caption, html .@{scope} tbody, html .@{scope} tfoot, html .@{scope} thead, html .@{scope} tr, html .@{scope} th, html .@{scope} td, html .@{scope} article, html .@{scope} aside, html .@{scope} canvas, html .@{scope} details, html .@{scope} embed, html .@{scope} figure, html .@{scope} figcaption, html .@{scope} footer, html .@{scope} header, html .@{scope} hgroup, html .@{scope} menu, html .@{scope} nav, html .@{scope} output, html .@{scope} ruby, html .@{scope} section, html .@{scope} summary, html .@{scope} time, html .@{scope} mark, html .@{scope} audio, html .@{scope} video") {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit;
+	background: transparent;
+	}
+	
+(~"html .@{scope} div") {
+	line-height: 1;
+	}
+	
+(~"html .@{scope} ol, html .@{scope} ul") {
+	list-style: none;
+	}
+	
+(~"html .@{scope} blockquote, html .@{scope} q") {
+	quotes: none;
+	}
+	
+(~"html .@{scope} blockquote:before, html .@{scope} blockquote:after, html .@{scope} q:before, html .@{scope} q:after") {
+	content: '';
+	content: none;
+	}
+	
+(~"html .@{scope} :focus") {
+    outline: 0;
+	}
+	
+(~"html .@{scope} textarea") {
+	resize: none; 
+	} 
+	
+(~"html .@{scope} ins") {
+    text-decoration: none;
+	}
+	
+(~"html .@{scope} del") {
+    text-decoration: line-through;
+	}
+	
+(~"html .@{scope} table") {
+    border-collapse: collapse;
+}
+
+(~"html .@{scope} .cleardiv") {
+	clear:both;
+	margin:0;
+	padding:0;
+	height:0px;
+	line-height:0px;
+	font-size:0px;
+	}
+	
+(~"html .@{scope} .clearfix:after") {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+	}
+	
+(~"html .@{scope} html[xmlns] .clearfix") {
+	display: block;
+	}
+ 
+(~" html .@{scope} .clearfix") {
+	height: 1%;
+	}
+    
+(~"html .@{scope} article, html .@{scope} aside, html .@{scope} details, html .@{scope} figcaption, html .@{scope} figure, html .@{scope} footer, html .@{scope} header, html .@{scope} hgroup, html .@{scope} menu, html .@{scope} nav, html .@{scope} section") {
+	display: block;
+	}
+
+/* @end */
